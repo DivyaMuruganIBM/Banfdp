@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage('Clone Repository') { 
             steps { 
-                git 'https://github.com/username/repository.git' 
+                git 'https://github.com/DivyaMuruganIBM/Banfdp.git' 
             } 
         } 
         stage('Build') { 
@@ -15,8 +15,8 @@ pipeline {
         stage('Deploy') { 
             steps { 
                 // Replace with the appropriate deployment command for your environment
-                sh 'ibmcloud login --apikey your-ibm-cloud-api-key' 
-                sh 'ibmcloud cos object-put --bucket my-html-project-bucket --key 
+                sh 'ibmcloud login --apikey wFiTNpUfhd8uBnwwdzK00sRwLMXwCaNQgU6CQmozsUYb' 
+                sh 'ibmcloud cos object-put --bucket my-html-project-fdp --key 
 index.html --file path/to/local/index.html' 
             } 
         } 
